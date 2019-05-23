@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prueba1.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace prueba1
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new FormPage();
         }
 
         protected override void OnStart()
