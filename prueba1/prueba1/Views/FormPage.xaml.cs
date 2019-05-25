@@ -79,7 +79,7 @@ namespace prueba1.Views
             client.BaseAddress = new Uri("http://service.twk.cl");
 
             // método asincrono await espera la respuesta
-            string jsonData = "{'nombre' :'" + nombre.Text + "', 'pass' :'" + pass1.Text + "', 'rut' :'" + rut.Text + "' }";
+            string jsonData = "{'NombreCompleto' :'" + nombre.Text + "', 'Usuario_id' :'" + rut.Text + "' }";
 
             var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync("/api/alumno/179143488", content);
